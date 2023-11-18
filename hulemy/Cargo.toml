@@ -7,8 +7,10 @@ edition.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-boxxo-hal.workspace = true
-cortex-m.workspace = true
+boxxo = { workspace = true, features = ["rt", "critical-section"] }
+boxxo-hal = { workspace = true }
+cortex-m = { workspace = true, features = ["critical-section-single-core"] }
 cortex-m-rt.workspace = true
 cortex-m-semihosting.workspace = true
+critical-section.workspace = true
 panic-halt.workspace = true

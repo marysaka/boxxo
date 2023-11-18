@@ -7,4 +7,11 @@ edition.workspace = true
 rust-version.workspace = true
 
 [dependencies]
+critical-section = { workspace = true, optional = true }
 cortex-m.workspace = true
+cortex-m-rt = { workspace = true, optional = true }
+vcell.workspace = true
+
+[features]
+rt = ["cortex-m-rt/device"]
+critical-section = ["dep:critical-section"]
