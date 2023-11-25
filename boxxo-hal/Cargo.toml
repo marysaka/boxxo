@@ -7,4 +7,4 @@ edition.workspace = true
 rust-version.workspace = true
 
 [dependencies]
-boxxo.workspace = true
+boxxo = { workspace = true, features = ["critical-section"] }
