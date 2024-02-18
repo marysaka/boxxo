@@ -1,4 +1,4 @@
 [toolchain]
-channel = "1.74"
+channel = "1.67"
 components = [ "rustfmt", "rust-src", "llvm-tools-preview" ]
 targets = [ "thumbv7em-none-eabihf" ]

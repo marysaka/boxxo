@@ -3,7 +3,7 @@ version = "0.1.0"
 authors = ["Mary Guillemard <mary@mary.zone>"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
-rust-version = "1.74"
+rust-version = "1.67"
 
 [workspace]
 members = ["boxxo/", "boxxo-hal/", "hulemy/"]
@@ -18,7 +18,7 @@ hulemy = { version = "0.1.0", path = "./hulemy" }
 # External
 critical-section = "1.0"
 cortex-m = "0.7"
-cortex-m-rt = "0.7"
+cortex-m-rt = "0.6.15"
 cortex-m-semihosting = "0.5"
 panic-halt = "0.2.0"
 vcell = "0.1"
